@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "My library project",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode=development",
     "build": "webpack --mode=production",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "ui:dev": "npx ladle serve",
+    "ui:build": "npx ladle build",
+    "ui:preview": "npx ladle preview"
   },
   "repository": {
     "type": "git",
@@ -29,6 +33,7 @@
     "@babel/preset-env": "^7.22.6",
     "@babel/preset-react": "^7.22.5",
     "@babel/preset-typescript": "^7.22.5",
+    "@ladle/react": "^2.15.0",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "@typescript-eslint/eslint-plugin": "^5.61.0",

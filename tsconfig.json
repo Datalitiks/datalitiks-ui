@@ -16,7 +16,7 @@
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": false,
@@ -29,6 +29,10 @@
     }
   },
   "include": [
-    "src"
+    "src",
+    ".ladle"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }

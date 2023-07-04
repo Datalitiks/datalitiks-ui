@@ -1,8 +1,0 @@
-@layer reset, base, tokens, recipes, utilities;
-
-
-:root {
-  /* Your default theme */
-  --background: white;
-  --foreground: black;
-}

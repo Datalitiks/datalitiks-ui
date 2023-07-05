@@ -1,5 +1,5 @@
 {
-  "name": "datalitiks-ui",
+  "name": "@datalitiks/datalitiks-ui",
   "version": "1.0.1",
   "description": "My library project",
   "main": "index.js",

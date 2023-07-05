@@ -1,6 +1,6 @@
 {
   "name": "@datalitiks/datalitiks-ui",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "My library project",
   "main": "src/index.ts",
   "type": "module",

@@ -13,8 +13,6 @@ jobs:
       uses: actions/checkout@v2
     - name: node
       uses: actions/setup-node@v2
-      with:
-        registry-url: https://registry.npmjs.org
     - name: publish
       run: npm publish --access public
       env:

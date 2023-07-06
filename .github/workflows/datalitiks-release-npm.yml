@@ -17,7 +17,7 @@ jobs:
         with:
           registry-url: http://registry.npmjs.org/
       - name: login
-        run: npm login --scope=@datalitiks --registry=https://registry.mycorp.com
+        run: npm login --scope=@datalitiks --registry=https://registry.datalitiks.com
       - name: publish
         run: npm publish --access public
         env:

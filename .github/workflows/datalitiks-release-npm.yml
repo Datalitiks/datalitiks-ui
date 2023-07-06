@@ -1,3 +1,4 @@
+---
 name: Datalitiks Release NPM
 
 run-name: ${{ github.actor }} is testing out Datalitiks-UI 🚀
@@ -5,20 +6,19 @@ run-name: ${{ github.actor }} is testing out Datalitiks-UI 🚀
 on: push
 
 jobs:
-  
+
   publish:
     runs-on: ubuntu-latest
     steps:
-    - name: checkout
-      uses: actions/checkout@v2
-    - name: node
-      uses: actions/setup-node@v2
-    - name: login
-      run: npm login --scope=@datalitiks --registry=https://registry.mycorp.com  
-    - name: publish
-      run: npm publish --access public
-      with:
-        registry-url: https://registry.npmjs.org
-      env:
-        TOKEN_NPM: ${{ secrets.NPM_AUTH_TOKEN }}
-      
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: node
+        uses: actions/setup-node@v2
+      - name: login
+        run: npm login --scope=@datalitiks --registry=https://registry.mycorp.com
+      - name: publish
+        run: npm publish --access public
+        with:
+          registry-url: https://registry.npmjs.org
+        env:
+          TOKEN_NPM: ${{ secrets.NPM_AUTH_TOKEN }}

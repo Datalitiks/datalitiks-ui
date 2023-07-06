@@ -23,14 +23,15 @@
     "noImplicitAny": false,
     "jsx": "react-jsx",
     "paths": {
-      "@root/*": [
+      "@/*": [
         "./src/*"
       ]
     }
   },
   "include": [
     "src",
-    ".ladle"
+    ".ladle",
+    "styled-system"
   ],
   "exclude": [
     "node_modules"

@@ -1,1 +1,1 @@
-export const plugins = [['autoprefixer']];
+export const plugins = [['autoprefixer', { '@pandacss/dev/postcss': {} }]];

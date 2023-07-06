@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 const { ProgressPlugin } = require('webpack');
 
-module.exports = function(env, argv) {
+module.exports = function (env, argv) {
     return {
         mode: argv.mode,
         entry: path.resolve(__dirname, 'src/index.ts'),
@@ -21,12 +21,25 @@ module.exports = function(env, argv) {
                     test: /\.(js|ts)x?$/,
                     exclude: /node_modules/,
                     use: ['babel-loader', 'ts-loader']
-                }
+                },
+                {
+                    test: /\.css$/,
+                    use: [
+                        { loader: 'style-loader' },
+                        {
+                            loader: 'css-loader',
+                            options: {
+                                modules: true,
+                            },
+                        },
+                        { loader: 'postcss-loader' },
+                    ],
+                },
             ]
         },
         externals: {
             'react': 'react',
-            'react-dom': 'react-dom'
+            'react-dom': 'react-dom',
         },
         resolve: {
             alias: {

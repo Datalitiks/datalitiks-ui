@@ -1,7 +1,7 @@
 ---
 name: Datalitiks Release NPM
 
-run-name: ${{ github.actor }} is testing out Datalitiks-UI 🚀 again
+run-name: ${{ github.actor }} is testing out Datalitiks-UI 🚀 
 
 on: push
 

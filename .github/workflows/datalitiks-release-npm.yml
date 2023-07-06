@@ -15,9 +15,9 @@ jobs:
       - name: node
         uses: actions/setup-node@v2
         with:
-          registry-url: http://registry.npmjs.org/
+          registry-url: https://registry.npmjs.org/
       - name: login
-        run: npm login --scope=@datalitiks --registry=https://registry.datalitiks.com
+        run: npm login --scope=@datalitiks --registry=https://registry.npmjs.org/
       - name: publish
         run: npm publish --access public
         env:

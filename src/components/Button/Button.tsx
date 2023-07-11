@@ -15,7 +15,7 @@ type ButtonProps = ButtonVariants & {
     children: ReactNode;
 };
 
-export default function Button({ children, visual, size }: ButtonProps) {
+export function Button({ children, visual, size }: ButtonProps) {
     return (
         <button className={buttonRecipe({ visual, size })}>{children}</button>
     );

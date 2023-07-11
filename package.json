@@ -1,18 +1,16 @@
 {
   "name": "@datalitiks/datalitiks-ui",
+  "files": ["src", "dist"],
   "version": "1.0.5",
   "description": "My library project",
   "main": "src/index.ts",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode=development",
-    "build": "webpack --mode=production",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "lint:fix": "npm run lint -- --fix",
-    "ui:dev": "npx ladle serve",
-    "ui:build": "npx ladle build",
-    "ui:preview": "npx ladle preview",
+    "dev": "npx ladle serve",
+    "build": "npx ladle build",
+    "preview": "npx ladle preview",
     "prepare": "panda codegen"
   },
   "repository": {

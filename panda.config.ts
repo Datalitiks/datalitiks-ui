@@ -5,13 +5,10 @@ export default defineConfig({
     preflight: true,
 
     // Where to look for your css declarations
-    include: ['./src/**/*.{js,jsx,ts,tsx}', './pages/**/*.{js,jsx,ts,tsx}'],
+    include: ['./src/**/*.{js,jsx,ts,tsx}'],
 
     // Files to exclude
     exclude: [],
-
-    // jsx files
-    jsxFramework: 'react',
 
     // Useful for theme customization
     theme: {
@@ -19,5 +16,8 @@ export default defineConfig({
     },
 
     // The output directory for your css system
-    outdir: 'src/styled-system'
+    outdir: './src/styled-system',
+
+    // The JSX framework to use
+    jsxFramework: 'react'
 });

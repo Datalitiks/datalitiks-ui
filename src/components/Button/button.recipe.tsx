@@ -2,7 +2,7 @@ import { cva, type RecipeVariantProps } from '@/styled-system/css';
 
 export const buttonRecipe = cva({
     base: {
-        display: 'flex',
+        display: 'inline-flex',
         cursor: 'pointer',
         color: 'white',
         textAlign: 'center'

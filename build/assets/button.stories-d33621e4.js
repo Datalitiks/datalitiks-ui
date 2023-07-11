@@ -1,0 +1,1 @@
+import{j as t}from"./index-2702d8b3.js";const o=()=>t("button",{children:"My Button"});typeof window<"u"&&window.document&&window.document.createElement&&document.documentElement.setAttribute("data-storyloaded","");export{o as Button};

@@ -16,6 +16,11 @@ button.argTypes = {
         options: ['primary', 'secondary', 'warning', 'danger', 'success'],
         defaultValue: 'primary'
     },
+    shape: {
+        control: { type: 'select' },
+        options: ['rounded', 'square'],
+        defaultValue: 'rounded'
+    },
     size: {
         control: { type: 'select' },
         options: ['xs', 'sm', 'md', 'lg', 'xl'],

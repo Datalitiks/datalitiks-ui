@@ -13,9 +13,7 @@ export default defineConfig({
 
     // Useful for theme customization
     theme: {
-        extend: {
-            ...datalitiksTheme
-        }
+        extend: { ...datalitiksTheme }
     },
 
     // The output directory for your css system

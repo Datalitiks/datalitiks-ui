@@ -15,10 +15,33 @@ export const buttonRecipe = cva({
             primary: {
                 color: 'primary.50',
                 bg: 'primary.500',
-                _hover: { bg: 'primary.400' },
-                _focus: { bg: 'primary.300' },
-                _disabled: { bg: 'primary.200', color: 'primary.800' },
-                borderColor: 'primary.800'
+                borderColor: 'primary.800',
+                _hover: {
+                    bg: 'primary.400',
+                    color: 'primary.50',
+                    borderColor: 'primary.600'
+                },
+                _focus: {
+                    bg: 'primary.300',
+                    color: 'primary.50',
+                    borderColor: 'primary.600'
+                },
+                _disabled: {
+                    bg: 'gray.100',
+                    color: 'gray.800',
+                    borderColor: 'gray.200',
+                    cursor: 'not-allowed',
+                    _hover: {
+                        bg: 'gray.100',
+                        color: 'gray.800',
+                        borderColor: 'gray.200'
+                    },
+                    _focus: {
+                        bg: 'gray.100',
+                        color: 'gray.800',
+                        borderColor: 'gray.200'
+                    }
+                }
             },
             secondary: {
                 bg: '#072F33',
@@ -27,23 +50,17 @@ export const buttonRecipe = cva({
                 _focus: { bg: 'blue.700' }
             }
         },
+        shape: {
+            rounded: { borderRadius: 'xl' }
+        },
         size: {
+            xs: { padding: '1', fontSize: '8px' },
             sm: { padding: '4', fontSize: '12px' },
-            lg: { padding: '8', fontSize: '24px' }
+            md: { padding: '6', fontSize: '16px' },
+            lg: { padding: '8', fontSize: '24px' },
+            xl: { padding: '12', fontSize: '32px' }
         }
     },
-    compoundVariants: [
-        {
-            color: 'primary',
-            size: 'lg',
-            css: { borderWidth: '4px' }
-        },
-        {
-            color: 'secondary',
-            size: 'sm',
-            css: { borderWidth: '4px' }
-        }
-    ],
     defaultVariants: {
         color: 'primary',
         size: 'md'

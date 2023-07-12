@@ -13,13 +13,13 @@ export const buttonRecipe = cva({
         color: {
             primary: {
                 bg: '#F77770',
-                borderColor: 'red.700',
+                borderColor: 'red.800',
                 _hover: { bg: 'red.700' },
                 _focus: { bg: 'red.700' }
             },
             secondary: {
                 bg: '#072F33',
-                borderColor: 'blue.700',
+                borderColor: 'blue.800',
                 _hover: { bg: 'blue.700' },
                 _focus: { bg: 'blue.700' }
             }
@@ -48,4 +48,6 @@ export const buttonRecipe = cva({
 });
 
 export type ButtonProps = HTMLStyledProps<'button'> &
-    RecipeVariantProps<typeof buttonRecipe>;
+    RecipeVariantProps<typeof buttonRecipe> & {
+        children: React.ReactNode;
+    };

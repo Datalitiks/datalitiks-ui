@@ -11,8 +11,8 @@
         "Button"
       ],
       "locStart": 3,
-      "locEnd": 3,
-      "filePath": "src/components/Button/button.stories.tsx",
+      "locEnd": 7,
+      "filePath": "src/components/atoms/button/button.stories.tsx",
       "meta": {}
     }
   }

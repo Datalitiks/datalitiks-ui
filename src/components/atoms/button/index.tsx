@@ -1,7 +1,6 @@
 import { cx } from '@/styled-system/css';
 import { styled } from '@/styled-system/jsx';
 import { ButtonProps, buttonRecipe } from './button.recipe';
-import { ReactNode } from 'react';
 
 export const Button = ({
     color,
@@ -9,9 +8,7 @@ export const Button = ({
     className,
     children,
     ...props
-}: ButtonProps & {
-    children: ReactNode;
-}) => {
+}: ButtonProps) => {
     return (
         <styled.button
             {...props}

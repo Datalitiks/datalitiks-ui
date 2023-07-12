@@ -15,14 +15,14 @@
       "filePath": "src/components/atoms/button/button.stories.tsx",
       "meta": {}
     },
-    "default--default-template": {
+    "default-template--default-template": {
       "name": "Default template",
       "levels": [
-        "Default"
+        "Default template"
       ],
       "locStart": 4,
       "locEnd": 6,
-      "filePath": "src/components/templates/default-template/default.stories.tsx",
+      "filePath": "src/components/templates/default-template/default-template.stories.tsx",
       "meta": {}
     }
   }

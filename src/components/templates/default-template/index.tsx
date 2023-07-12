@@ -1,7 +1,7 @@
 'use client';
 import { cx } from '@/styled-system/css';
 import { styled } from '@/styled-system/jsx';
-import { DefaultTemplateProps, defaultTemplateRecipe } from './default.recipe';
+import { DefaultTemplateProps, defaultTemplateRecipe } from './default-template.recipe';
 
 export const DefaultTemplate = ({
     className,

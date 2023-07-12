@@ -10,9 +10,19 @@
       "levels": [
         "Button"
       ],
-      "locStart": 3,
-      "locEnd": 7,
+      "locStart": 4,
+      "locEnd": 6,
       "filePath": "src/components/atoms/button/button.stories.tsx",
+      "meta": {}
+    },
+    "default--default-template": {
+      "name": "Default template",
+      "levels": [
+        "Default"
+      ],
+      "locStart": 4,
+      "locEnd": 6,
+      "filePath": "src/components/templates/default-template/default.stories.tsx",
       "meta": {}
     }
   }

@@ -26,9 +26,9 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": [
-    "src",
-    ".ladle",
-    "styled-system"
+    "./src",
+    "./.ladle",
+    "./styled-system"
   ],
   "exclude": [
     "node_modules"

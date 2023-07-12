@@ -1,14 +1,16 @@
 import { cva, type RecipeVariantProps } from '@/styled-system/css';
+import { HTMLStyledProps } from '@/styled-system/jsx';
 
 export const buttonRecipe = cva({
     base: {
-        display: 'inline-flex',
+        display: 'inline-block',
         cursor: 'pointer',
         color: 'white',
-        textAlign: 'center'
+        textAlign: 'center',
+        bg: 'blue.500'
     },
     variants: {
-        visual: {
+        color: {
             primary: {
                 bg: '#F77770',
                 borderColor: 'red.700',
@@ -29,20 +31,21 @@ export const buttonRecipe = cva({
     },
     compoundVariants: [
         {
-            visual: 'primary',
+            color: 'primary',
             size: 'lg',
             css: { borderWidth: '4px', borderColor: 'black' }
         },
         {
-            visual: 'secondary',
+            color: 'secondary',
             size: 'sm',
             css: { borderWidth: '4px', borderColor: 'red' }
         }
     ],
     defaultVariants: {
-        visual: 'primary',
+        color: 'primary',
         size: 'sm'
     }
 });
 
-export type ButtonVariants = RecipeVariantProps<typeof buttonRecipe>;
+export type ButtonProps = HTMLStyledProps<'button'> &
+    RecipeVariantProps<typeof buttonRecipe>;

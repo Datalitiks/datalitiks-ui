@@ -6,7 +6,7 @@ export const button: Story = ({ children, ...props }: any) => {
 };
 
 button.args = {
-    children: 'My Button',
+    children: 'My Button Text',
     disabled: false
 };
 

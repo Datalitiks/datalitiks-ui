@@ -1652,7 +1652,7 @@ const tokens = {
     "variable": "var(--colors-slate-950)"
   },
   "colors.brand": {
-    "value": "tomato",
+    "value": "coral pink",
     "variable": "var(--colors-brand)"
   },
   "colors.primary.50": {
@@ -1676,7 +1676,7 @@ const tokens = {
     "variable": "var(--colors-primary-400)"
   },
   "colors.primary.500": {
-    "value": "#ef4444",
+    "value": "#f77770",
     "variable": "var(--colors-primary-500)"
   },
   "colors.primary.600": {
@@ -1698,6 +1698,50 @@ const tokens = {
   "colors.primary.950": {
     "value": "#450a0a",
     "variable": "var(--colors-primary-950)"
+  },
+  "colors.secondary.50": {
+    "value": "#f5f5f5",
+    "variable": "var(--colors-secondary-50)"
+  },
+  "colors.secondary.100": {
+    "value": "#e5e5e5",
+    "variable": "var(--colors-secondary-100)"
+  },
+  "colors.secondary.200": {
+    "value": "#d4d4d4",
+    "variable": "var(--colors-secondary-200)"
+  },
+  "colors.secondary.300": {
+    "value": "#a3a3a3",
+    "variable": "var(--colors-secondary-300)"
+  },
+  "colors.secondary.400": {
+    "value": "#737373",
+    "variable": "var(--colors-secondary-400)"
+  },
+  "colors.secondary.500": {
+    "value": "#525252",
+    "variable": "var(--colors-secondary-500)"
+  },
+  "colors.secondary.600": {
+    "value": "#404040",
+    "variable": "var(--colors-secondary-600)"
+  },
+  "colors.secondary.700": {
+    "value": "#262626",
+    "variable": "var(--colors-secondary-700)"
+  },
+  "colors.secondary.800": {
+    "value": "#171717",
+    "variable": "var(--colors-secondary-800)"
+  },
+  "colors.secondary.900": {
+    "value": "#0f0f0f",
+    "variable": "var(--colors-secondary-900)"
+  },
+  "colors.secondary.950": {
+    "value": "#000000",
+    "variable": "var(--colors-secondary-950)"
   },
   "breakpoints.sm": {
     "value": "640px",

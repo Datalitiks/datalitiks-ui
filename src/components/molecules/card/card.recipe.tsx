@@ -125,7 +125,7 @@ export const cardRecipe = cva({
   }
 })
 
-export type CardProps = HTMLStyledProps<'card'> &
+export type CardProps = HTMLStyledProps<'div'> &
   RecipeVariantProps<typeof cardRecipe> & {
     children: React.ReactNode;
   };

@@ -12,9 +12,9 @@
     "dev": "npx ladle serve",
     "build": "npx ladle build & npm run tsup",
     "preview": "npx ladle preview",
-    "prepare": "panda codegen",
+    "prepare": "npm install & panda codegen",
     "tsup": "tsup",
-    "publish": "npm install & npm run build",
+    "publish": "npm run build",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "lint:fix": "npm run lint -- --fix"
   },

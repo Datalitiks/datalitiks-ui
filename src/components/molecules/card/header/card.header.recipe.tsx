@@ -1,7 +1,7 @@
 import { cva, type RecipeVariantProps } from '@/styled-system/css'
 import { HTMLStyledProps } from '@/styled-system/jsx';
 
-export const cardRecipe = cva({
+export const cardHeaderRecipe = cva({
   base: {
     borderWidth: '3px',
     boxShadow: '4px 4px 0px #000000',
@@ -123,7 +123,7 @@ export const cardRecipe = cva({
   }
 })
 
-export type CardProps = HTMLStyledProps<'div'> &
-  RecipeVariantProps<typeof cardRecipe> & {
+export type CardHeaderProps = HTMLStyledProps<'div'> &
+  RecipeVariantProps<typeof cardHeaderRecipe> & {
     children: React.ReactNode;
   };

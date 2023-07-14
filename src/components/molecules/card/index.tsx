@@ -13,8 +13,11 @@ export const Card = ({
   return (
     <styled.div
       {...props}
-      className={cx(cardRecipe({ color, size }), className)}>
+      className={cx(cardRecipe({ size, color }), className)}>
       {children}
     </styled.div>
   );
 };
+
+
+

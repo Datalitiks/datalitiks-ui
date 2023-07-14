@@ -1,19 +1,23 @@
 import { defineConfig } from 'tsup'
 import { tsconfigPathsPlugin } from "esbuild-plugin-tsconfig-paths";
+import path from 'path'
 
 export default defineConfig({
-  outExtension({ format }) {
-    return {
-      js: `.${format}.js`,
-    }
-  },
-  entry: ['src/index.ts'],
-  outDir: 'dist',
   splitting: true,
-  external: ['react', 'react-dom'],
-  tsconfig: 'tsconfig.json',
-  sourcemap: true,
   clean: true,
+  dts: true,
+  format: ['esm'],
+  minify: true,
   bundle: true,
-  esbuildPlugins: [tsconfigPathsPlugin()],
+  skipNodeModulesBundle: true,
+  target: 'es2022',
+  outDir: 'dist',
+  entry: ['src/index.ts'],
+  esbuildOptions(options) {
+      // the directory structure will be the same as the source
+      options.outbase = "./";
+  },
+  esbuildPlugins: [tsconfigPathsPlugin(
+    { tsconfig: path.resolve(__dirname, "./tsconfig.json") }
+  )],
 })

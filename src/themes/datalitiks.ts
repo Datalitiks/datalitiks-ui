@@ -1,33 +1,51 @@
-export const datalitiksTheme = {
-    tokens: {
+import { definePreset } from '@pandacss/dev'
+
+export const datalitiksPreset = definePreset({
+  theme: {
+    extend: {
+      tokens: {
         colors: {
-            brand: { value: 'tomato' },
-            primary: {
-                50: { value: '#fef2f2' },
-                100: { value: '#fee2e2' },
-                200: { value: '#fecaca' },
-                300: { value: '#fca5a5' },
-                400: { value: '#f87171' },
-                500: { value: '#ef4444' },
-                600: { value: '#dc2626' },
-                700: { value: '#b91c1c' },
-                800: { value: '#991b1b' },
-                900: { value: '#7f1d1d' },
-                950: { value: '#450a0a' }
-            },
-            secondary: {
-                50: { value: '#f5f5f5' },
-                100: { value: '#e5e5e5' },
-                200: { value: '#d4d4d4' },
-                300: { value: '#a3a3a3' },
-                400: { value: '#737373' },
-                500: { value: '#525252' },
-                600: { value: '#404040' },
-                700: { value: '#262626' },
-                800: { value: '#171717' },
-                900: { value: '#0f0f0f' },
-                950: { value: '#000000' }
-            }
-        }
-    }
-};
+          brand: {
+            50: { value: '#FDF2F2' },
+            100: { value: '#F9D9D9' },
+            200: { value: '#F4B1B1' },
+            300: { value: '#EF8888' },
+            400: { value: '#EA6060' },
+            500: { value: '#E53737' },
+            600: { value: '#B22727' },
+            700: { value: '#801818' },
+            800: { value: '#4E0B0B' },
+            900: { value: '#290404' },
+            950: { value: '#0E0000' },
+          },
+          primary: {
+            50: { value: '#FEF2F2' },
+            100: { value: '#FEE6E6' },
+            200: { value: '#FDC7C7' },
+            300: { value: '#FAA7A7' },
+            400: { value: '#F78080' },
+            500: { value: '#F35353' },
+            600: { value: '#D93838' },
+            700: { value: '#B12020' },
+            800: { value: '#901616' },
+            900: { value: '#741313' },
+            950: { value: '#400808' },
+          },
+          secondary: {
+            50: { value: '#E6F7F3' },
+            100: { value: '#C1ECE1' },
+            200: { value: '#9BDAD0' },
+            300: { value: '#73C7BF' },
+            400: { value: '#4DB5AE' },
+            500: { value: '#37A49D' },
+            600: { value: '#28817B' },
+            700: { value: '#196E5A' },
+            800: { value: '#0E543F' },
+            900: { value: '#062C20' },
+            950: { value: '#000000' },
+          },
+        },
+      },
+    },
+  },
+})

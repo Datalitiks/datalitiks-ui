@@ -14,7 +14,7 @@
     "preview": "npx ladle preview",
     "prepare": "panda codegen",
     "tsup": "tsup",
-    "publish": "npm run build && npm run tsup",
+    "publish": "npm install & npm run build",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "lint:fix": "npm run lint -- --fix"
   },

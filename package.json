@@ -10,10 +10,11 @@
   "type": "module",
   "scripts": {
     "dev": "npx ladle serve",
-    "build": "npx ladle build & npm run compile",
+    "build": "npx ladle build & npm run tsup",
     "preview": "npx ladle preview",
     "prepare": "panda codegen",
     "tsup": "tsup",
+    "publish": "npm run build && npm run tsup",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "lint:fix": "npm run lint -- --fix"
   },

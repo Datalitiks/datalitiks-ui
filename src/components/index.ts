@@ -1,1 +1,2 @@
-export { default as Button } from './Button';
+export * from './atoms/button';
+export * from './templates/default-template';

@@ -9,19 +9,14 @@
   "parser": "@typescript-eslint/parser",
   "plugins": [
     "@typescript-eslint",
-    "react",
-    "prettier"
+    "react"
   ],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier"
+    "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
-    "@typescript-eslint/ban-ts-comment": "off",
-    "prettier/prettier": [
-      "error"
-    ]
+    "@typescript-eslint/ban-ts-comment": "off"
   }
 }

@@ -1,7 +1,7 @@
 
 import { cx } from '@/styled-system/css';
 import { styled } from '@/styled-system/jsx';
-import { DefaultTemplateMainProps, defaultTemplateMainRecipe } from './main.recipe';
+import { type DefaultTemplateMainProps, defaultTemplateMainRecipe } from './main.recipe';
 
 export const DefaultTemplateMain = ({
     className,

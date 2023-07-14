@@ -1,7 +1,7 @@
 
 import { cx } from '@/styled-system/css';
 import { styled } from '@/styled-system/jsx';
-import { DefaultTemplateFooterProps, defaultTemplateFooterRecipe } from './footer.recipe';
+import { type DefaultTemplateFooterProps, defaultTemplateFooterRecipe } from './footer.recipe';
 
 export const DefaultTemplateFooter = ({
     className,

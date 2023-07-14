@@ -1,7 +1,7 @@
 
 import { cx } from '@/styled-system/css';
 import { styled } from '@/styled-system/jsx';
-import { DefaultTemplateHeaderProps, defaultTemplateHeaderRecipe } from './header.recipe';
+import { type DefaultTemplateHeaderProps, defaultTemplateHeaderRecipe } from './header.recipe';
 
 export const DefaultTemplateHeader = ({
     className,

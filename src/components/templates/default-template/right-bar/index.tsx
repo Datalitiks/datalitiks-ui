@@ -1,7 +1,7 @@
 
 import { cx } from '@/styled-system/css';
 import { styled } from '@/styled-system/jsx';
-import { DefaultTemplateRightBarProps, defaultTemplateRightBarRecipe } from './right-bar.recipe';
+import { type DefaultTemplateRightBarProps, defaultTemplateRightBarRecipe } from './right-bar.recipe';
 
 export const DefaultTemplateRightBar = ({
     className,

@@ -1,7 +1,7 @@
 'use client';
-import { cx } from '@/styled-system/css';
 import { styled } from '@/styled-system/jsx';
-import { ButtonProps, buttonRecipe } from './button.recipe';
+import { type ButtonProps, buttonRecipe } from './button.recipe';
+import { cx } from '@/styled-system/css';
 
 export const Button = ({
     color,

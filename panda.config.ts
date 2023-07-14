@@ -22,5 +22,7 @@ export default defineConfig({
     outdir: './src/styled-system',
 
     // The JSX framework to use
-    jsxFramework: 'react'
+    jsxFramework: 'react',
+
+    // emitPackage: true,
 });

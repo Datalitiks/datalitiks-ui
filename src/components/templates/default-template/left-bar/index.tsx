@@ -1,7 +1,7 @@
 
 import { cx } from '@/styled-system/css';
 import { styled } from '@/styled-system/jsx';
-import { DefaultTemplateLeftBarProps, defaultTemplateLeftBarRecipe } from './left-bar.recipe';
+import { type DefaultTemplateLeftBarProps, defaultTemplateLeftBarRecipe } from './left-bar.recipe';
 
 export const DefaultTemplateLeftBar = ({
     className,

@@ -1,5 +1,5 @@
 import { defineConfig } from '@pandacss/dev';
-import { datalitiksTheme } from './src/themes/datalitiks';
+import { datalitiksPreset } from './src/themes/datalitiks';
 
 export default defineConfig({
     // Whether to use css reset
@@ -11,9 +11,11 @@ export default defineConfig({
     // Files to exclude
     exclude: [],
 
+    presets: ['@pandacss/dev/presets', datalitiksPreset],
+
     // Useful for theme customization
     theme: {
-        extend: { ...datalitiksTheme }
+        extend: {}
     },
 
     // The output directory for your css system

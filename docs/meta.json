@@ -20,8 +20,8 @@
       "levels": [
         "Default template"
       ],
-      "locStart": 4,
-      "locEnd": 6,
+      "locStart": 5,
+      "locEnd": 31,
       "filePath": "src/components/templates/default-template/default-template.stories.tsx",
       "meta": {}
     }

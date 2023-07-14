@@ -1,4 +1,4 @@
-'use client';
+
 import { cx } from '@/styled-system/css';
 import { styled } from '@/styled-system/jsx';
 import { DefaultTemplateHeaderProps, defaultTemplateHeaderRecipe } from './header.recipe';

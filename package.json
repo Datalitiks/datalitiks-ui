@@ -1,6 +1,9 @@
 {
   "name": "@datalitiks/datalitiks-ui",
-  "files": ["src", "dist"],
+  "files": [
+    "src",
+    "dist"
+  ],
   "version": "1.0.5",
   "description": "My library project",
   "main": "src/index.ts",
@@ -34,6 +37,7 @@
     "eslint-plugin-react": "^7.32.2",
     "prettier": "^2.8.8",
     "react": "^18.2.0",
+    "tsup": "^7.1.0",
     "typescript": "^5.1.6"
   }
 }

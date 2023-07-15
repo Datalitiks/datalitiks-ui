@@ -1,13 +1,17 @@
 import { cva, type RecipeVariantProps } from '@/styled-system/css'
 import { HTMLStyledProps } from '@/styled-system/jsx';
+import { ChildrenTypes } from '@/types/common';
 
 export const cardActionsRecipe = cva({
   base: {
-    borderWidth: '3px',
-    boxShadow: '4px 4px 0px #000000',
-    borderRadius: '13px',
-    padding: 6,
-    maxWidth: '388px'
+    paddingLeft: '3',
+    paddingRight: '3',
+    paddingTop: '3',
+    paddingBottom: '3',
+    borderWidth: '1px',
+    maxWidth: '200px',
+    textAlign: 'center',
+    margin: '20px auto'
   },
   variants: {
     color: {
@@ -76,54 +80,40 @@ export const cardActionsRecipe = cva({
     },
     shape: {
       square: { rounded: 'none' },
+      semi: { rounded: '10px' },
       rounded: { rounded: 'full' },
     },
     size: {
       xs: {
-        paddingLeft: '3',
-        paddingRight: '3',
-        paddingTop: '1',
-        paddingBottom: '1',
-        fontSize: 'sm'
+        fontSize: 'sm',
+        fontWeight: '100'
       },
       sm: {
-        paddingLeft: '4',
-        paddingRight: '4',
-        paddingTop: '2',
-        paddingBottom: '2',
-        fontSize: 'sm'
+        fontSize: 'sm',
+        fontWeight: '300'
       },
       md: {
-        paddingLeft: '6',
-        paddingRight: '6',
-        paddingTop: '3',
-        paddingBottom: '3',
-        fontSize: 'md'
+        fontSize: 'md',
+        fontWeight: '500'
       },
       lg: {
-        paddingLeft: '8',
-        paddingRight: '8',
-        paddingTop: '4',
-        paddingBottom: '4',
-        fontSize: 'lg'
+        fontSize: 'lg',
+        fontWeight: '700'
       },
       xl: {
-        paddingLeft: '14',
-        paddingRight: '14',
-        paddingTop: '5',
-        paddingBottom: '5',
-        fontSize: 'lg'
+        fontSize: 'lg',
+        fontWeight: '900'
       }
     }
   },
   defaultVariants: {
     color: 'primary',
     size: 'md',
-    shape: 'rounded'
+    shape: 'semi'
   }
 })
 
 export type CardActionsProps = HTMLStyledProps<'div'> &
   RecipeVariantProps<typeof cardActionsRecipe> & {
-    children: React.ReactNode;
+    children?: ChildrenTypes
   };

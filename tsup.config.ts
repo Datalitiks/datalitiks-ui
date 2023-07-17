@@ -6,9 +6,9 @@ export default defineConfig({
   sourcemap: true,
   dts: true,
   outDir: 'dist',
-  format: ['esm'],
+  format: ['cjs', 'esm'],
   bundle: false,
-  entry: ['./index.ts', "./components/**/*.{ts,tsx}", "./themes/**/*.{ts,tsx}", "./types/**/*.{ts,tsx}"],
+  entry: ['./src/index.ts', "./src/**/*.{ts,tsx}"],
   esbuildOptions(options) {
     // the directory structure will be the same as the source
     options.outbase = "./";

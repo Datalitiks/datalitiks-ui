@@ -7,11 +7,12 @@
   "module": "dist/datalitik-ui.js",
   "types": "dist/types.d.ts",
   "type": "module",
+  "files": ["src", "dist"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode=development",
     "build": "webpack --mode=production",
-    "build:tsup": "tsup --onSuccess \"npm run prepare\"",
+    "build:tsup": "tsup",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "lint:fix": "npm run lint -- --fix",
     "ui:dev": "npx ladle serve",

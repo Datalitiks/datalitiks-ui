@@ -8,7 +8,7 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -30,7 +30,6 @@
   "include": [
     "src",
     ".ladle",
-    "styled-system"
   ],
   "exclude": [
     "node_modules"

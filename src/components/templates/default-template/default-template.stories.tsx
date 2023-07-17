@@ -30,6 +30,11 @@ export const defaultTemplate: Story = ({ children, ...props }: any) => {
     )
 }
 
+export default {
+  title: 'Templates/Default',
+}
+
+
 defaultTemplate.args = {
     children: 'My DefaultTemplate',
 }

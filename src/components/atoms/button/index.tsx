@@ -7,14 +7,14 @@ export const Button = ({
                          color,
                          size,
                          className,
-                         label,
+                         children,
                          ...props
                        }: ButtonProps & {
   label: string
 }) => {
   return (
     <styled.button {...props} type="button" className={cx(buttonRecipe({ color, size }), className)}>
-      {label}
+      {children}
     </styled.button>
   )
 }

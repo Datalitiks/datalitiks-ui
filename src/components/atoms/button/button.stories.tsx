@@ -5,6 +5,10 @@ export const button: Story = ({ children, ...props }: any) => {
     return <Button {...props}>{children}</Button>;
 };
 
+export default {
+    title: 'Atoms/Button',
+}
+
 button.args = {
     children: 'My Button Text',
     disabled: false

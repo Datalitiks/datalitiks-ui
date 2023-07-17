@@ -1,7 +1,7 @@
 import React from 'react';
-import { styled } from '@/styled-system/jsx';
+import { styled } from '@datalitiks/datalitiks-ui/jsx';
+import { cx } from "@datalitiks/datalitiks-ui/css";
 import { ButtonProps, buttonRecipe } from "./button.recipe";
-import { cx } from "@/styled-system/css";
 
 export const Button = ({
                          color,

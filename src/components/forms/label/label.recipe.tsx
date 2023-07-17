@@ -3,7 +3,10 @@ import { HTMLStyledProps } from '@/styled-system/jsx';
 import { ChildrenTypes } from '@/types/common';
 
 export const labelRecipe = cva({
-  base: {},
+  base: {
+    color: 'brand.300',
+    fontWeight: '100'
+  },
   variants: {
     color: {},
     size: {
@@ -13,19 +16,19 @@ export const labelRecipe = cva({
       },
       sm: {
         fontSize: 'sm',
-        fontWeight: '300'
+        fontWeight: '200'
       },
       md: {
         fontSize: 'md',
-        fontWeight: '500'
+        fontWeight: '300'
       },
       lg: {
         fontSize: 'lg',
-        fontWeight: '700'
+        fontWeight: '400'
       },
       xl: {
         fontSize: 'lg',
-        fontWeight: '900'
+        fontWeight: '500'
       }
     }
   },

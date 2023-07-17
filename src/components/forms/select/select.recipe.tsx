@@ -6,10 +6,11 @@ export const selectRecipe = cva({
   base: {
     display: 'block',
     padding: '1',
-    width: '100px',
+    width: '100%',
     borderRadius: '5px',
-    margin: '10px 0 20px',
-    color: 'primary.500',
+    margin: '5px 0 20px',
+    color: 'primary.900',
+
   },
   variants: {
     color: {},
@@ -20,19 +21,19 @@ export const selectRecipe = cva({
       },
       sm: {
         fontSize: 'sm',
-        fontWeight: '300'
+        fontWeight: '200'
       },
       md: {
         fontSize: 'md',
-        fontWeight: '500'
+        fontWeight: '300'
       },
       lg: {
         fontSize: 'lg',
-        fontWeight: '700'
+        fontWeight: '400'
       },
       xl: {
         fontSize: 'lg',
-        fontWeight: '900'
+        fontWeight: '500'
       }
     }
   },

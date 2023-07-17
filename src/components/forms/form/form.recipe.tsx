@@ -7,8 +7,10 @@ export const formRecipe = cva({
     borderWidth: '1px',
     borderRadius: '10px',
     padding: 6,
-    maxWidth: '388px',
-    boxShadow: '5px 5px 3px 0px rgba(0,0,0,0.25)'
+    boxShadow: '5px 5px 3px 0px rgba(0,0,0,0.25)',
+    height: 'auto', 
+    margin: 'auto',
+    maxWidth: '550px'
   },
   variants: {
     color: {

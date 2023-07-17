@@ -5,13 +5,13 @@ import { ChildrenTypes } from '@/types/common';
 export const textareaRecipe = cva({
   base: {
     display: 'block',
-    padding: '1',
     width: '100%',
     borderRadius: '5px',
     margin: '10px 0 20px',
-    _placeholder: { 
-      color: 'primary.500',
-      opacity: '35%' 
+    minHeight: '150px',
+    paddingLeft: '2',
+    _placeholder: {
+      color: 'primary.900',
     }
   },
   variants: {
@@ -23,19 +23,19 @@ export const textareaRecipe = cva({
       },
       sm: {
         fontSize: 'sm',
-        fontWeight: '300'
+        fontWeight: '200'
       },
       md: {
         fontSize: 'md',
-        fontWeight: '500'
+        fontWeight: '300'
       },
       lg: {
         fontSize: 'lg',
-        fontWeight: '700'
+        fontWeight: '400'
       },
       xl: {
         fontSize: 'lg',
-        fontWeight: '900'
+        fontWeight: '500'
       }
     }
   },

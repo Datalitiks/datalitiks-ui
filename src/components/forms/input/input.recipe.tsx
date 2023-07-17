@@ -6,11 +6,13 @@ export const inputRecipe = cva({
   base: {
     width: '100%',
     padding: '1',
-    margin: '10px 0 20px',
+    margin: '5px 0 20px',
     borderRadius: '5px',
     _placeholder: { 
-      color: 'primary.500',
-      opacity: '35%' 
+      color: 'brand.300',
+      opacity: '50%',
+      fontWeight: '300',
+      paddingLeft: '5px' 
     }
   },
   variants: {

@@ -1651,97 +1651,225 @@ const tokens = {
     "value": "#020617",
     "variable": "var(--colors-slate-950)"
   },
-  "colors.brand": {
-    "value": "tomato",
-    "variable": "var(--colors-brand)"
+  "colors.brand.50": {
+    "value": "#fee8e7",
+    "variable": "var(--colors-brand-50)"
+  },
+  "colors.brand.100": {
+    "value": "#fcd2cf",
+    "variable": "var(--colors-brand-100)"
+  },
+  "colors.brand.200": {
+    "value": "#fbbbb8",
+    "variable": "var(--colors-brand-200)"
+  },
+  "colors.brand.300": {
+    "value": "#faa4a0",
+    "variable": "var(--colors-brand-300)"
+  },
+  "colors.brand.400": {
+    "value": "#f88e88",
+    "variable": "var(--colors-brand-400)"
+  },
+  "colors.brand.500": {
+    "value": "#f77770",
+    "variable": "var(--colors-brand-500)"
+  },
+  "colors.brand.600": {
+    "value": "#f44137",
+    "variable": "var(--colors-brand-600)"
+  },
+  "colors.brand.700": {
+    "value": "#e3180d",
+    "variable": "var(--colors-brand-700)"
+  },
+  "colors.brand.800": {
+    "value": "#aa120a",
+    "variable": "var(--colors-brand-800)"
+  },
+  "colors.brand.900": {
+    "value": "#710c06",
+    "variable": "var(--colors-brand-900)"
+  },
+  "colors.brand.950": {
+    "value": "#390603",
+    "variable": "var(--colors-brand-950)"
   },
   "colors.primary.50": {
-    "value": "#fef2f2",
+    "value": "#bdf1f6",
     "variable": "var(--colors-primary-50)"
   },
   "colors.primary.100": {
-    "value": "#fee2e2",
+    "value": "#7be2ed",
     "variable": "var(--colors-primary-100)"
   },
   "colors.primary.200": {
-    "value": "#fecaca",
+    "value": "#38d4e4",
     "variable": "var(--colors-primary-200)"
   },
   "colors.primary.300": {
-    "value": "#fca5a5",
+    "value": "#19a9b7",
     "variable": "var(--colors-primary-300)"
   },
   "colors.primary.400": {
-    "value": "#f87171",
+    "value": "#106c75",
     "variable": "var(--colors-primary-400)"
   },
   "colors.primary.500": {
-    "value": "#ef4444",
+    "value": "#072f33",
     "variable": "var(--colors-primary-500)"
   },
   "colors.primary.600": {
-    "value": "#dc2626",
+    "value": "#06272b",
     "variable": "var(--colors-primary-600)"
   },
   "colors.primary.700": {
-    "value": "#b91c1c",
+    "value": "#051f22",
     "variable": "var(--colors-primary-700)"
   },
   "colors.primary.800": {
-    "value": "#991b1b",
+    "value": "#04171a",
     "variable": "var(--colors-primary-800)"
   },
   "colors.primary.900": {
-    "value": "#7f1d1d",
+    "value": "#021011",
     "variable": "var(--colors-primary-900)"
   },
   "colors.primary.950": {
-    "value": "#450a0a",
+    "value": "#010809",
     "variable": "var(--colors-primary-950)"
   },
   "colors.secondary.50": {
-    "value": "#f5f5f5",
+    "value": "#f7f8ec",
     "variable": "var(--colors-secondary-50)"
   },
   "colors.secondary.100": {
-    "value": "#e5e5e5",
+    "value": "#eff0da",
     "variable": "var(--colors-secondary-100)"
   },
   "colors.secondary.200": {
-    "value": "#d4d4d4",
+    "value": "#e7e9c7",
     "variable": "var(--colors-secondary-200)"
   },
   "colors.secondary.300": {
-    "value": "#a3a3a3",
+    "value": "#dfe2b4",
     "variable": "var(--colors-secondary-300)"
   },
   "colors.secondary.400": {
-    "value": "#737373",
+    "value": "#d7daa2",
     "variable": "var(--colors-secondary-400)"
   },
   "colors.secondary.500": {
-    "value": "#525252",
+    "value": "#cfd38f",
     "variable": "var(--colors-secondary-500)"
   },
   "colors.secondary.600": {
-    "value": "#404040",
+    "value": "#bdc265",
     "variable": "var(--colors-secondary-600)"
   },
   "colors.secondary.700": {
-    "value": "#262626",
+    "value": "#a3a943",
     "variable": "var(--colors-secondary-700)"
   },
   "colors.secondary.800": {
-    "value": "#171717",
+    "value": "#7b7f32",
     "variable": "var(--colors-secondary-800)"
   },
   "colors.secondary.900": {
-    "value": "#0f0f0f",
+    "value": "#525521",
     "variable": "var(--colors-secondary-900)"
   },
   "colors.secondary.950": {
-    "value": "#000000",
+    "value": "#292a11",
     "variable": "var(--colors-secondary-950)"
+  },
+  "colors.accent.50": {
+    "value": "#fef2e7",
+    "variable": "var(--colors-accent-50)"
+  },
+  "colors.accent.100": {
+    "value": "#fce5cf",
+    "variable": "var(--colors-accent-100)"
+  },
+  "colors.accent.200": {
+    "value": "#fbd8b8",
+    "variable": "var(--colors-accent-200)"
+  },
+  "colors.accent.300": {
+    "value": "#facaa0",
+    "variable": "var(--colors-accent-300)"
+  },
+  "colors.accent.400": {
+    "value": "#f8bd88",
+    "variable": "var(--colors-accent-400)"
+  },
+  "colors.accent.500": {
+    "value": "#f7b070",
+    "variable": "var(--colors-accent-500)"
+  },
+  "colors.accent.600": {
+    "value": "#f49137",
+    "variable": "var(--colors-accent-600)"
+  },
+  "colors.accent.700": {
+    "value": "#e3720d",
+    "variable": "var(--colors-accent-700)"
+  },
+  "colors.accent.800": {
+    "value": "#aa560a",
+    "variable": "var(--colors-accent-800)"
+  },
+  "colors.accent.900": {
+    "value": "#713906",
+    "variable": "var(--colors-accent-900)"
+  },
+  "colors.accent.950": {
+    "value": "#391d03",
+    "variable": "var(--colors-accent-950)"
+  },
+  "colors.tertiary.50": {
+    "value": "#deeef0",
+    "variable": "var(--colors-tertiary-50)"
+  },
+  "colors.tertiary.100": {
+    "value": "#bddde0",
+    "variable": "var(--colors-tertiary-100)"
+  },
+  "colors.tertiary.200": {
+    "value": "#9bcdd1",
+    "variable": "var(--colors-tertiary-200)"
+  },
+  "colors.tertiary.300": {
+    "value": "#7abcc2",
+    "variable": "var(--colors-tertiary-300)"
+  },
+  "colors.tertiary.400": {
+    "value": "#59abb3",
+    "variable": "var(--colors-tertiary-400)"
+  },
+  "colors.tertiary.500": {
+    "value": "#458f96",
+    "variable": "var(--colors-tertiary-500)"
+  },
+  "colors.tertiary.600": {
+    "value": "#39777d",
+    "variable": "var(--colors-tertiary-600)"
+  },
+  "colors.tertiary.700": {
+    "value": "#2e5f64",
+    "variable": "var(--colors-tertiary-700)"
+  },
+  "colors.tertiary.800": {
+    "value": "#22484b",
+    "variable": "var(--colors-tertiary-800)"
+  },
+  "colors.tertiary.900": {
+    "value": "#173032",
+    "variable": "var(--colors-tertiary-900)"
+  },
+  "colors.tertiary.950": {
+    "value": "#0b1819",
+    "variable": "var(--colors-tertiary-950)"
   },
   "breakpoints.sm": {
     "value": "640px",

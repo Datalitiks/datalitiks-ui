@@ -1,4 +1,4 @@
-
+import React from 'react';
 import { cx } from '@/styled-system/css';
 import { styled } from '@/styled-system/jsx';
 import { type DefaultTemplateLeftBarProps, defaultTemplateLeftBarRecipe } from './left-bar.recipe';

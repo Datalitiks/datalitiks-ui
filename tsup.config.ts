@@ -1,17 +1,19 @@
 import { defineConfig } from 'tsup'
-import { tsconfigPathsPlugin } from "esbuild-plugin-tsconfig-paths";
-// @ts-ignore
-import path from 'path'
 
 export default defineConfig({
   clean: true,
+  target: 'es2015',
+  sourcemap: true,
+  dts: true,
   outDir: 'dist',
-  entry: ['./src/index.ts'],
+  format: ['esm'],
+  bundle: false,
+  entry: ['./src/index.ts', "./src/components/**/*.{ts,tsx}"],
   esbuildOptions(options) {
     // the directory structure will be the same as the source
     options.outbase = "./";
+    options.banner = {
+      js: '"use client"',
+    }
   },
-  esbuildPlugins: [tsconfigPathsPlugin(
-    { tsconfig: path.resolve(__dirname, "./tsconfig.json") }
-  )],
 })

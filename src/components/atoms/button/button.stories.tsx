@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import React from 'react';
 import type { Story } from '@ladle/react';
 import { Button } from '.';
 export const button: Story = ({ children, ...props }: any) => {

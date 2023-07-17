@@ -1,3 +1,3 @@
-export { Button } from './atoms/button';
-export { Card } from './molecules/card';
-export { DefaultTemplate } from './templates/default-template';
+export * from './atoms/button';
+export * from './molecules/card';
+export * from './templates/default-template';

@@ -1,4 +1,4 @@
-'use client';
+import React from 'react';
 import { styled } from '@/styled-system/jsx';
 import { ButtonProps, buttonRecipe } from "./button.recipe";
 import { cx } from "@/styled-system/css";

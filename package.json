@@ -1,7 +1,7 @@
 {
   "name": "@datalitiks/datalitiks-ui",
   "version": "1.0.5",
-  "description": "My library project",
+  "description": "Datalitiks common ui components",
   "source": "src/index.ts",
   "main": "dist/index.js",
   "module": "dist/datalitik-ui.js",

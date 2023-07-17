@@ -4,7 +4,7 @@
     "src",
     "dist"
   ],
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "My library project",
   "main": "src/index.ts",
   "type": "module",

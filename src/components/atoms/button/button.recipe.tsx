@@ -81,40 +81,40 @@ export const buttonRecipe = cva({
             rounded: { rounded: 'full' },
         },
         size: {
-            xs: { 
-                paddingLeft: '3', 
-                paddingRight: '3', 
-                paddingTop: '1', 
-                paddingBottom: '1', 
-                fontSize: 'sm' 
+            xs: {
+                paddingLeft: '3',
+                paddingRight: '3',
+                paddingTop: '1',
+                paddingBottom: '1',
+                fontSize: 'sm'
             },
-            sm: { 
+            sm: {
                 paddingLeft: '4',
                 paddingRight: '4',
-                paddingTop: '2', 
-                paddingBottom: '2', 
-                fontSize: 'sm' 
+                paddingTop: '2',
+                paddingBottom: '2',
+                fontSize: 'sm'
             },
-            md: { 
+            md: {
                 paddingLeft: '6',
                 paddingRight: '6',
-                paddingTop: '3', 
-                paddingBottom: '3', 
-                fontSize: 'md' 
+                paddingTop: '3',
+                paddingBottom: '3',
+                fontSize: 'md'
             },
-            lg: { 
+            lg: {
                 paddingLeft: '8',
-                paddingRight: '8', 
-                paddingTop: '4', 
-                paddingBottom: '4', 
-                fontSize: 'lg' 
+                paddingRight: '8',
+                paddingTop: '4',
+                paddingBottom: '4',
+                fontSize: 'lg'
             },
-            xl: { 
-                paddingLeft: '14', 
-                paddingRight: '14', 
-                paddingTop: '5', 
-                paddingBottom: '5', 
-                fontSize: 'lg' 
+            xl: {
+                paddingLeft: '14',
+                paddingRight: '14',
+                paddingTop: '5',
+                paddingBottom: '5',
+                fontSize: 'lg'
             }
         }
     },

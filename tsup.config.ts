@@ -6,7 +6,7 @@ import path from 'path'
 export default defineConfig({
   clean: true,
   outDir: 'dist',
-  entry: ['src/index.ts'],
+  entry: ['./src/index.ts'],
   esbuildOptions(options) {
     // the directory structure will be the same as the source
     options.outbase = "./";

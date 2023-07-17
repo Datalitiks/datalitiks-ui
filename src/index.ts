@@ -1,2 +1,2 @@
-export { Button } from './components';
+export { Button } from './components/atoms/button';
 export { datalitiksPreset } from './themes';

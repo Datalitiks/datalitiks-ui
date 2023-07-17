@@ -1,6 +1,8 @@
 export * from './atoms/button';
-<<<<<<< HEAD
+export * from './forms/form';
+export * from './forms/input';
+export * from './forms/label';
+export * from './forms/select';
+export * from './forms/textarea';
 export * from './molecules/card';
-=======
 export * from './templates/default-template';
->>>>>>> origin/feature/ap-7/ian-datalitiks-ui

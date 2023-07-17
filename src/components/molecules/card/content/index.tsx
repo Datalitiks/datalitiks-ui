@@ -9,9 +9,9 @@ export const CardContent = ({
   ...props
 }: CardContentProps) => {
   return (
-    <styled.div
+    <styled.p
       {...props}
       className={cx(cardContentRecipe({ color }), className)}>
-    </styled.div>
+    </styled.p>
   );
 };

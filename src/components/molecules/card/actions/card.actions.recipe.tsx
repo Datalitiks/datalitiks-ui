@@ -4,6 +4,7 @@ import { ChildrenTypes } from '@/types/common';
 
 export const cardActionsRecipe = cva({
   base: {
+    display: 'flex',
     paddingLeft: '3',
     paddingRight: '3',
     paddingTop: '3',
@@ -11,7 +12,7 @@ export const cardActionsRecipe = cva({
     borderWidth: '1px',
     maxWidth: '200px',
     textAlign: 'center',
-    margin: '20px auto'
+    margin: '20px auto 30px'
   },
   variants: {
     color: {
@@ -113,7 +114,7 @@ export const cardActionsRecipe = cva({
   }
 })
 
-export type CardActionsProps = HTMLStyledProps<'div'> &
+export type CardActionsProps = HTMLStyledProps<'button'> &
   RecipeVariantProps<typeof cardActionsRecipe> & {
     children?: ChildrenTypes
   };

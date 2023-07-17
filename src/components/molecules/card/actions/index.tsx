@@ -11,10 +11,10 @@ export const CardActions = ({
   ...props
 }: CardActionsProps) => {
   return (
-    <styled.div
+    <styled.button
       {...props}
       className={cx(cardActionsRecipe({ color, size }), className)}>
       {children}
-    </styled.div>
+    </styled.button>
   );
 };

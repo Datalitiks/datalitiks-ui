@@ -39,7 +39,7 @@ export const cardHeaderRecipe = cva({
   }
 })
 
-export type CardHeaderProps = HTMLStyledProps<'div'> &
+export type CardHeaderProps = HTMLStyledProps<'h2'> &
   RecipeVariantProps<typeof cardHeaderRecipe> & {
     children?: ChildrenTypes
   };

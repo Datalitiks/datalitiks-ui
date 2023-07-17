@@ -11,11 +11,11 @@ export const CardHeader = ({
   ...props
 }: CardHeaderProps) => {
   return (
-    <styled.div
+    <styled.h2
       {...props}
       className={cx(cardHeaderRecipe({ color, size }), className)}>
       {children}
-    </styled.div>
+    </styled.h2>
   );
 };
 

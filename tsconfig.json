@@ -13,6 +13,11 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
 
     /* Linting */
     "strict": true,
@@ -21,9 +26,9 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": [
-    "src",
-    ".ladle",
-    "styled-system"
+    "./src",
+    "./.ladle",
+    "./styled-system"
   ],
   "exclude": [
     "node_modules"

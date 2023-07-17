@@ -7,7 +7,7 @@ const { ProgressPlugin } = require('webpack');
 module.exports = function (env, argv) {
   return {
     mode: argv.mode,
-    entry: path.resolve(__dirname, 'src/index.ts'),
+    entry: path.resolve(__dirname, './src/index.ts'),
     output: {
       filename: 'index.js',
       library: '$',

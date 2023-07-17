@@ -9,9 +9,7 @@ export const Button = ({
                          className,
                          children,
                          ...props
-                       }: ButtonProps & {
-  label: string
-}) => {
+                       }: ButtonProps) => {
   return (
     <styled.button {...props} type="button" className={cx(buttonRecipe({ color, size }), className)}>
       {children}

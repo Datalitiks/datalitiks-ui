@@ -8,7 +8,7 @@ export default defineConfig({
   outDir: 'dist',
   format: ['esm'],
   bundle: false,
-  entry: ['./src/index.ts', "./src/components/**/*.{ts,tsx}"],
+  entry: ['./src/index.ts', "./src/**/*.{ts,tsx}"],
   esbuildOptions(options) {
     // the directory structure will be the same as the source
     options.outbase = "./";

@@ -20,7 +20,8 @@
     "ui:dev": "npx ladle serve",
     "ui:build": "npx ladle build",
     "ui:preview": "npx ladle preview",
-    "prepare": "panda codegen"
+    "prepare": "panda codegen && husky install",
+    "patch": "npm version patch"
   },
   "repository": {
     "type": "git",
@@ -38,12 +39,13 @@
     "@types/node": "^20.4.2",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.32.2",
+    "husky": "^8.0.3",
     "postcss": "^8.4.26",
     "prettier": "^3.0.0",
     "react": "^18.2.0",

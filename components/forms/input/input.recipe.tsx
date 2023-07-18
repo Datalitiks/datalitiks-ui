@@ -1,20 +1,22 @@
-import { cva, type RecipeVariantProps } from '@/styled-system/css'
-import { HTMLStyledProps } from '@/styled-system/jsx';
+import { cva, type RecipeVariantProps } from '@datalitiks/datalitiks-ui/css'
+import { HTMLStyledProps } from '@datalitiks/datalitiks-ui/jsx';
 import { ChildrenTypes } from '@/types/common';
 
-export const textareaRecipe = cva({
+export const inputRecipe = cva({
   base: {
-    display: 'block',
-    width: '100%',
     borderRadius: '5px',
-    margin: '10px 0 20px',
-    minHeight: '150px',
+    color: 'primary.900',
+    fontWeight: '400',
+    margin: '5px 0 20px',
+    padding: '1',
     paddingLeft: '2',
+    width: '100%',
     _placeholder: {
       color: 'primary.900',
+      fontWeight: '300',
     },
     _focus: {
-      outlineColor: 'brand.500'
+      outlineColor: 'brand.500',
     },
   },
   variants: {
@@ -22,23 +24,18 @@ export const textareaRecipe = cva({
     size: {
       xs: {
         fontSize: 'sm',
-        fontWeight: '100'
       },
       sm: {
         fontSize: 'sm',
-        fontWeight: '200'
       },
       md: {
         fontSize: 'md',
-        fontWeight: '300'
       },
       lg: {
         fontSize: 'lg',
-        fontWeight: '400'
       },
       xl: {
         fontSize: 'lg',
-        fontWeight: '500'
       }
     }
   },
@@ -47,7 +44,7 @@ export const textareaRecipe = cva({
   }
 })
 
-export type TextareaProps = HTMLStyledProps<'textarea'> &
-  RecipeVariantProps<typeof textareaRecipe> & {
+export type InputProps = HTMLStyledProps<'input'> &
+  RecipeVariantProps<typeof inputRecipe> & {
     children?: ChildrenTypes
   };

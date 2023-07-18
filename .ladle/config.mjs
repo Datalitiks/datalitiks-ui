@@ -3,4 +3,5 @@ export default {
   outDir: "docs",
   port: 61000,
   previewPort: 61001,
+  stories: ["../**/*.stories.mdx", "../**/*.stories.@(js|jsx|ts|tsx)"],
 };

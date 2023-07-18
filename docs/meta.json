@@ -15,6 +15,7 @@
       "filePath": "src/components/atoms/button/button.stories.tsx",
       "meta": {}
     },
+<<<<<<< HEAD
     "form--form": {
       "name": "Form",
       "levels": [
@@ -25,6 +26,8 @@
       "filePath": "src/components/forms/form/form.stories.tsx",
       "meta": {}
     },
+=======
+>>>>>>> bca9ac9c94f1708455ffc81abb509dbaf6781083
     "card--card": {
       "name": "Card",
       "levels": [

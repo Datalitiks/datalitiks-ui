@@ -1,1 +1,1 @@
-export { datalitiksTheme } from './datalitiks';
+export { datalitiksPreset } from './datalitiks';

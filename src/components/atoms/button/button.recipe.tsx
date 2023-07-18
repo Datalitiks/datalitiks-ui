@@ -1,5 +1,6 @@
-import { cva, type RecipeVariantProps } from '@/styled-system/css';
-import { HTMLStyledProps } from '@/styled-system/jsx';
+import { cva, type RecipeVariantProps } from '@datalitiks/datalitiks-ui/css';
+import { HTMLStyledProps } from '@datalitiks/datalitiks-ui/jsx';
+import { ChildrenTypes } from "@/types/common";
 
 export const buttonRecipe = cva({
     base: {
@@ -127,7 +128,4 @@ export const buttonRecipe = cva({
     }
 });
 
-export type ButtonProps = HTMLStyledProps<'button'> &
-    RecipeVariantProps<typeof buttonRecipe> & {
-        children: React.ReactNode;
-    };
+export type ButtonProps = HTMLStyledProps<'button'> & RecipeVariantProps<typeof buttonRecipe> & { children: ChildrenTypes };

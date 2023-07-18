@@ -21,7 +21,8 @@
     "ui:build": "npx ladle build",
     "ui:preview": "npx ladle preview",
     "prepare": "panda codegen",
-    "patch": "npm version patch"
+    "patch": "npm version patch",
+    "precommit": "npm run lint:fix && npm run patch"
   },
   "repository": {
     "type": "git",

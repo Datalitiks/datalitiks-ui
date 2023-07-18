@@ -20,7 +20,7 @@
     "ui:dev": "npx ladle serve",
     "ui:build": "npx ladle build",
     "ui:preview": "npx ladle preview",
-    "prepare": "panda codegen && husky install",
+    "prepare": "panda codegen",
     "patch": "npm version patch"
   },
   "repository": {
@@ -45,7 +45,6 @@
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.32.2",
-    "husky": "^8.0.3",
     "postcss": "^8.4.26",
     "prettier": "^3.0.0",
     "react": "^18.2.0",

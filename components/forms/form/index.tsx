@@ -1,6 +1,6 @@
 import React from 'react';
-import { styled } from '@/styled-system/jsx';
-import { cx } from "@/styled-system/css";
+import { styled } from '../../../styled-system/jsx';
+import { cx } from "../../../styled-system/css";
 import { FormProps, formRecipe } from './form.recipe';
 
 export const Form = ({

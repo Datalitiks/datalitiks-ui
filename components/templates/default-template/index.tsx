@@ -1,7 +1,7 @@
-'use client';
+
 import React from 'react';
-import { cx } from '@/styled-system/css';
-import { styled } from '@/styled-system/jsx';
+import { cx } from '../../../styled-system/css';
+import { styled } from '../../../styled-system/jsx';
 import { type DefaultTemplateProps, defaultTemplateRecipe } from './default-template.recipe';
 import { DefaultTemplateRightBar } from './right-bar';
 import { DefaultTemplateMain } from './main';

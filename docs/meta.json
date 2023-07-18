@@ -4,5 +4,49 @@
     "github": "https://github.com/tajo/ladle",
     "version": 1
   },
-  "stories": {}
+  "stories": {
+    "atoms--button--button": {
+      "name": "Button",
+      "levels": [
+        "Atoms",
+        "Button"
+      ],
+      "locStart": 5,
+      "locEnd": 7,
+      "filePath": "components/atoms/button/button.stories.tsx",
+      "meta": {}
+    },
+    "form--form": {
+      "name": "Form",
+      "levels": [
+        "Form"
+      ],
+      "locStart": 9,
+      "locEnd": 62,
+      "filePath": "components/forms/form/form.stories.tsx",
+      "meta": {}
+    },
+    "molecules--card--card": {
+      "name": "Card",
+      "levels": [
+        "Molecules",
+        "Card"
+      ],
+      "locStart": 4,
+      "locEnd": 17,
+      "filePath": "components/molecules/card/card.stories.tsx",
+      "meta": {}
+    },
+    "templates--default--default-template": {
+      "name": "Default template",
+      "levels": [
+        "Templates",
+        "Default"
+      ],
+      "locStart": 5,
+      "locEnd": 31,
+      "filePath": "components/templates/default-template/default-template.stories.tsx",
+      "meta": {}
+    }
+  }
 }

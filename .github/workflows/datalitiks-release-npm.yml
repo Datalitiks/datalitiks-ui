@@ -4,8 +4,6 @@ name: Datalitiks-Ui Release NPM
 run-name: ${{ github.actor }} is deploying Datalitiks-UI to NPM 🚀
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
     branches: [ main ]
 

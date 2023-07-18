@@ -1,5 +1,5 @@
 import { defineConfig } from '@pandacss/dev';
-import { datalitiksPreset } from './src/themes/datalitiks';
+import { datalitiksPreset } from './themes/datalitiks';
 
 export default defineConfig({
     // Whether to use css reset

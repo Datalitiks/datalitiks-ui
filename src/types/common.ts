@@ -1,1 +1,3 @@
-export type ChildrenTypes = React.ReactNode | React.ReactNode[] | string | string[] | any;
+import { ReactNode } from "react";
+
+export type ChildrenTypes = ReactNode | ReactNode[] | string | string[];

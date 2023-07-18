@@ -16,6 +16,11 @@ export const card: Story = ({ children, ...props }: any) => {
     )
 };
 
+export default {
+  title: 'Molecules/Card',
+}
+
+
 card.argTypes = {
     width: {
         control: { type: 'select' },

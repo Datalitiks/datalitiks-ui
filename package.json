@@ -4,8 +4,8 @@
   "description": "Datalitiks common ui components",
   "source": "src/index.ts",
   "main": "dist/index.js",
-  "module": "dist/datalitik-ui.js",
-  "types": "dist/types.d.ts",
+  "module": "dist/index.cjs",
+  "types": "dist/index.d.ts",
   "type": "module",
   "files": [
     "src",

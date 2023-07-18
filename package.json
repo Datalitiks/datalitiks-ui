@@ -1,6 +1,6 @@
 {
   "name": "@datalitiks/datalitiks-ui",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Datalitiks common ui components",
   "source": "src/index.ts",
   "main": "dist/index.js",
@@ -20,7 +20,8 @@
     "ui:dev": "npx ladle serve",
     "ui:build": "npx ladle build",
     "ui:preview": "npx ladle preview",
-    "prepare": "panda codegen"
+    "prepare": "panda codegen",
+    "patch": "npm version patch"
   },
   "repository": {
     "type": "git",
@@ -38,8 +39,8 @@
     "@types/node": "^20.4.2",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^5.0.0",

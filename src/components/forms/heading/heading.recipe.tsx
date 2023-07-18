@@ -3,44 +3,50 @@ import { HTMLStyledProps } from '@/styled-system/jsx';
 import { ChildrenTypes } from '@/types/common';
 
 export const headingRecipe = cva({
-  base: {
-    width: '100%',
-    padding: '1',
-    margin: '5px 0 20px',
-    borderRadius: '5px',
-    _placeholder: { 
-      color: 'brand.300',
-      opacity: '50%',
-      fontWeight: '300',
-      paddingLeft: '5px' 
-    }
-  },
+  base: {},
   variants: {
-    color: {},
+    color: {
+      brand: {
+        color: 'brand.500'
+      },
+      primary: {
+        color: 'primary.500'
+      },
+      secondary: {
+        color: 'secondary.500'
+      },
+      accent: {
+        color: 'accent.500'
+      },
+      tertiary: {
+        color: 'tertiary.500'
+      }
+    },
     size: {
       xs: {
-        fontSize: 'sm',
-        fontWeight: '100',
-      },
-      sm: {
-        fontSize: 'sm',
+        fontSize: '18px',
         fontWeight: '300',
       },
-      md: {
-        fontSize: 'md',
+      sm: {
+        fontSize: '22px',
         fontWeight: '500',
       },
+      md: {
+        fontSize: '26px',
+        fontWeight: '600',
+      },
       lg: {
-        fontSize: 'lg',
+        fontSize: '30px',
         fontWeight: '700'
       },
       xl: {
-        fontSize: 'lg',
+        fontSize: '40px',
         fontWeight: '900'
       }
     }
   },
   defaultVariants: {
+    color: 'brand',
     size: 'md',
   }
 })

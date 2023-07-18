@@ -12,7 +12,10 @@ export const textareaRecipe = cva({
     paddingLeft: '2',
     _placeholder: {
       color: 'primary.900',
-    }
+    },
+    _focus: {
+      outlineColor: 'brand.500'
+    },
   },
   variants: {
     color: {},

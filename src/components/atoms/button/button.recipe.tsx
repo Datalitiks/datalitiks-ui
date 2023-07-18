@@ -3,14 +3,14 @@ import { HTMLStyledProps } from '@/styled-system/jsx';
 
 export const buttonRecipe = cva({
     base: {
-        display: 'inline-flex',
         alignItems: 'center',
-        justifyContent: 'center',
-        cursor: 'pointer',
-        textAlign: 'center',
         borderWidth: '1px',
+        cursor: 'pointer',
+        display: 'inline-flex',
         fontWeight: '600',
-        margin: '5px auto 15px'
+        justifyContent: 'center',
+        margin: '5px auto 15px',
+        textAlign: 'center',
     },
     variants: {
         color: {
@@ -122,7 +122,7 @@ export const buttonRecipe = cva({
     },
     defaultVariants: {
         color: 'brand',
-        size: 'md',
+        size: 'sm',
         shape: 'semi'
     }
 });

@@ -4,43 +4,51 @@ import { ChildrenTypes } from '@/types/common';
 
 export const paragraphRecipe = cva({
   base: {
-    width: '100%',
-    padding: '1',
-    margin: '5px 0 20px',
-    borderRadius: '5px',
-    _placeholder: { 
-      color: 'brand.300',
-      opacity: '50%',
-      fontWeight: '300',
-      paddingLeft: '5px' 
-    }
+    marginBottom: '30px'
   },
   variants: {
-    color: {},
+    color: {
+      brand: {
+        color: 'brand.300'
+      },
+      primary: {
+        color: 'primary.300'
+      },
+      secondary: {
+        color: 'secondary.300'
+      },
+      accent: {
+        color: 'accent.300'
+      },
+      tertiary: {
+        color: 'tertiary.300'
+      }
+    },
     size: {
       xs: {
-        fontSize: 'sm',
+        fontSize: '10px',
         fontWeight: '100',
       },
       sm: {
-        fontSize: 'sm',
-        fontWeight: '300',
+        fontSize: '12px',
+        fontWeight: '200',
       },
       md: {
-        fontSize: 'md',
-        fontWeight: '500',
+        fontSize: '15px',
+        fontWeight: '300',
       },
       lg: {
-        fontSize: 'lg',
-        fontWeight: '700'
+        fontSize: '18px',
+        fontWeight: '400'
       },
       xl: {
-        fontSize: 'lg',
-        fontWeight: '900'
+        fontSize: '25px',
+        fontWeight: '500'
       }
     }
   },
   defaultVariants: {
+    color: 'brand',
     size: 'md',
   }
 })

@@ -15,6 +15,26 @@
       "filePath": "src/components/atoms/button/button.stories.tsx",
       "meta": {}
     },
+    "form--form": {
+      "name": "Form",
+      "levels": [
+        "Form"
+      ],
+      "locStart": 9,
+      "locEnd": 62,
+      "filePath": "src/components/forms/form/form.stories.tsx",
+      "meta": {}
+    },
+    "card--card": {
+      "name": "Card",
+      "levels": [
+        "Card"
+      ],
+      "locStart": 4,
+      "locEnd": 17,
+      "filePath": "src/components/molecules/card/card.stories.tsx",
+      "meta": {}
+    },
     "default-template--default-template": {
       "name": "Default template",
       "levels": [

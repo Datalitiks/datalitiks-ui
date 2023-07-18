@@ -1,6 +1,6 @@
 {
   "name": "@datalitiks/datalitiks-ui",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Datalitiks common ui components",
   "source": "src/index.ts",
   "main": "dist/index.js",
@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/Datalitiks/datalitiks-ui#readme",
   "devDependencies": {
-    "@ladle/react": "^2.16.1",
+    "@ladle/react": "^2.15.0",
     "@pandacss/dev": "^0.7.0",
     "@types/node": "^20.4.2",
     "@types/react": "^18.2.15",

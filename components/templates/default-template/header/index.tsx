@@ -1,6 +1,6 @@
 
-import { cx } from '@datalitiks/datalitiks-ui/css';
-import { styled } from '@datalitiks/datalitiks-ui/jsx';
+import { cx } from '@/styled-system/css';
+import { styled } from '@/styled-system/jsx';
 import { type DefaultTemplateHeaderProps, defaultTemplateHeaderRecipe } from './header.recipe';
 
 export const DefaultTemplateHeader = ({

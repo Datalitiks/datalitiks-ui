@@ -19,8 +19,8 @@ export default defineConfig({
     },
 
     // The output directory for your css system
-    emitPackage: true,
-    outdir: '@datalitiks/datalitiks-ui',
+    // emitPackage: true,
+    outdir: './styled-system',
 
     // The JSX framework to use
     jsxFramework: 'react',

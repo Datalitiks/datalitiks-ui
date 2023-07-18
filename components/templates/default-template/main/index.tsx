@@ -1,6 +1,6 @@
 import React from 'react';
-import { cx } from '@datalitiks/datalitiks-ui/css';
-import { styled } from '@datalitiks/datalitiks-ui/jsx';
+import { cx } from '@/styled-system/css';
+import { styled } from '@/styled-system/jsx';
 import { type DefaultTemplateMainProps, defaultTemplateMainRecipe } from './main.recipe';
 
 export const DefaultTemplateMain = ({

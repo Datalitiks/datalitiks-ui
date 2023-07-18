@@ -1,6 +1,6 @@
 import React from 'react';
-import { styled } from '@datalitiks/datalitiks-ui/jsx';
-import { cx } from "@datalitiks/datalitiks-ui/css";
+import { styled } from '@/styled-system/jsx';
+import { cx } from "@/styled-system/css";
 import { SelectProps, selectRecipe } from './select.recipe';
 
 export const Select = ({

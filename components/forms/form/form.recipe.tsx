@@ -1,5 +1,5 @@
-import { cva, type RecipeVariantProps } from '@datalitiks/datalitiks-ui/css'
-import { HTMLStyledProps } from '@datalitiks/datalitiks-ui/jsx';
+import { cva, type RecipeVariantProps } from '@/styled-system/css'
+import { HTMLStyledProps } from '@/styled-system/jsx';
 import { ChildrenTypes } from '@/types/common';
 
 export const formRecipe = cva({
@@ -8,7 +8,7 @@ export const formRecipe = cva({
     borderRadius: '10px',
     padding: 6,
     boxShadow: '5px 5px 3px 0px rgba(0,0,0,0.25)',
-    height: 'auto', 
+    height: 'auto',
     margin: 'auto',
     maxWidth: '550px'
   },

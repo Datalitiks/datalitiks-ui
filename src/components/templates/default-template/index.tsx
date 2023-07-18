@@ -1,8 +1,8 @@
 'use client';
-import { cx } from '@/styled-system/css';
-import { styled } from '@/styled-system/jsx';
-import { DefaultTemplateProps, defaultTemplateRecipe } from './default-template.recipe';
-import { useState } from 'react';
+import React from 'react';
+import { cx } from '@datalitiks/datalitiks-ui/css';
+import { styled } from '@datalitiks/datalitiks-ui/jsx';
+import { type DefaultTemplateProps, defaultTemplateRecipe } from './default-template.recipe';
 import { DefaultTemplateRightBar } from './right-bar';
 import { DefaultTemplateMain } from './main';
 import { DefaultTemplateLeftBar } from './left-bar';
@@ -14,8 +14,6 @@ export const DefaultTemplate = ({
     children,
     ...props
 }: DefaultTemplateProps) => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [leftBarOpen, setLeftBarOpen] = useState(false);
     return (
         <styled.section
             {...props}

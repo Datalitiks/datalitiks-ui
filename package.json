@@ -14,14 +14,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsup --watch",
-    "build": "rimraf ./dist & tsup",
+    "build": "rimraf ./dist & tsup && npm run patch",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "lint:fix": "npm run lint -- --fix",
     "ui:dev": "npx ladle serve",
     "ui:build": "npx ladle build",
     "ui:preview": "npx ladle preview",
     "prepare": "panda codegen",
-    "patch": "npm version patch"
+    "patch": "npm version patch",
+    "precommit": "npm run lint:fix && npm run patch"
   },
   "repository": {
     "type": "git",

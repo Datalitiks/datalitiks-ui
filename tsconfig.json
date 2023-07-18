@@ -24,9 +24,6 @@
     "preserveConstEnums": true,
     "typeRoots": ["./types"],
     "baseUrl": "./",
-    "paths": {
-      "@/*": ["./*"]
-    }
   },
   "include": ["."],
   "exclude": ["**/node_modules"]

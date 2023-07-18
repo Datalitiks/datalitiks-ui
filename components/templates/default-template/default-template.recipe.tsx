@@ -1,7 +1,7 @@
 
-import { cva, type RecipeVariantProps } from '@/styled-system/css';
-import { HTMLStyledProps } from '@/styled-system/jsx';
-import { ChildrenTypes } from '@/types/common';
+import { cva, type RecipeVariantProps } from '../../../styled-system/css';
+import { HTMLStyledProps } from '../../../styled-system/jsx';
+import {ChildrenTypes} from "../../../types/common";
 
 export const defaultTemplateRecipe = cva({
     base: {

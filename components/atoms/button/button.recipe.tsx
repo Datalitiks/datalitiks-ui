@@ -1,7 +1,7 @@
+import {cva, RecipeVariantProps} from "../../../styled-system/css";
+import {HTMLStyledProps} from "../../../styled-system/types/jsx";
+import {ChildrenTypes} from "../../../types/common";
 
-import { ChildrenTypes } from "@/types/common";
-import {cva, RecipeVariantProps} from "@/styled-system/css";
-import {HTMLStyledProps} from "@/styled-system/types/jsx";
 
 export const buttonRecipe = cva({
     base: {

@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import type { Story } from '@ladle/react';
 import { Form } from '.';
-import { styled } from '@datalitiks/datalitiks-ui/jsx';
-import { Box } from '@datalitiks/datalitiks-ui/jsx';
+import { styled } from '@/styled-system/jsx';
+import { Box } from '@/styled-system/jsx';
 import { Button, Heading, Label, Input, Select, Textarea, Paragraph } from '@/components';
 
 

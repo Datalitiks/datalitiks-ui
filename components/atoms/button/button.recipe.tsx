@@ -1,6 +1,7 @@
-import { cva, type RecipeVariantProps } from '@datalitiks/datalitiks-ui/css';
-import { HTMLStyledProps } from '@datalitiks/datalitiks-ui/jsx';
+
 import { ChildrenTypes } from "@/types/common";
+import {cva, RecipeVariantProps} from "@/styled-system/css";
+import {HTMLStyledProps} from "@/styled-system/types/jsx";
 
 export const buttonRecipe = cva({
     base: {

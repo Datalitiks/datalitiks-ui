@@ -18,13 +18,13 @@ button.args = {
 button.argTypes = {
     color: {
         control: { type: 'select' },
-        options: ['primary', 'secondary', 'warning', 'danger', 'success'],
-        defaultValue: 'primary'
+        options: ['brand', 'primary', 'secondary', 'warning', 'danger', 'success'],
+        defaultValue: 'brand'
     },
     shape: {
         control: { type: 'select' },
-        options: ['rounded', 'square'],
-        defaultValue: 'rounded'
+        options: ['rounded', 'square', 'semi'],
+        defaultValue: 'semi'
     },
     size: {
         control: { type: 'select' },

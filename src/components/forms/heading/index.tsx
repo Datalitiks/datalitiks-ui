@@ -1,20 +1,20 @@
 import React from 'react';
 import { styled } from '@datalitiks/datalitiks-ui/jsx';
 import { cx } from "@datalitiks/datalitiks-ui/css";
-import { FormProps, formRecipe } from './form.recipe';
+import { HeadingProps, headingRecipe } from './heading.recipe';
 
-export const Form = ({
+export const Heading = ({
   color,
   size,
   className,
   children,
   ...props
-}: FormProps) => {
+}: HeadingProps) => {
   return (
-    <styled.form
+    <styled.h2
       {...props}
-      className={cx(formRecipe({ size, color }), className)}>
+      className={cx(headingRecipe({ color, size }), className)}>
       {children}
-    </styled.form>
+    </styled.h2>
   );
 };

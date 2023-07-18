@@ -4,16 +4,48 @@ import { ChildrenTypes } from "@/types/common";
 
 export const buttonRecipe = cva({
     base: {
-        display: 'inline-flex',
         alignItems: 'center',
-        justifyContent: 'center',
-        cursor: 'pointer',
-        textAlign: 'center',
         borderWidth: '1px',
-        fontWeight: '600'
+        cursor: 'pointer',
+        display: 'inline-flex',
+        fontWeight: '600',
+        justifyContent: 'center',
+        margin: '5px auto 15px',
+        textAlign: 'center',
     },
     variants: {
         color: {
+            brand: {
+                color: 'brand.50',
+                bg: 'brand.500',
+                borderColor: 'brand.500',
+                _hover: {
+                    bg: 'brand.400',
+                    color: 'brand.50',
+                    borderColor: 'brand.600'
+                },
+                _focus: {
+                    bg: 'brand.300',
+                    color: 'brand.50',
+                    borderColor: 'brand.600'
+                },
+                _disabled: {
+                    bg: 'gray.100',
+                    color: 'gray.800',
+                    borderColor: 'gray.200',
+                    cursor: 'not-allowed',
+                    _hover: {
+                        bg: 'gray.100',
+                        color: 'gray.800',
+                        borderColor: 'gray.200'
+                    },
+                    _focus: {
+                        bg: 'gray.100',
+                        color: 'gray.800',
+                        borderColor: 'gray.200'
+                    }
+                }
+            },
             primary: {
                 color: 'primary.50',
                 bg: 'primary.500',
@@ -45,40 +77,10 @@ export const buttonRecipe = cva({
                     }
                 }
             },
-            secondary: {
-                color: 'secondary.50',
-                bg: 'secondary.500',
-                borderColor: 'secondary.800',
-                _hover: {
-                    bg: 'secondary.400',
-                    color: 'secondary.50',
-                    borderColor: 'secondary.600'
-                },
-                _focus: {
-                    bg: 'secondary.300',
-                    color: 'secondary.50',
-                    borderColor: 'secondary.600'
-                },
-                _disabled: {
-                    bg: 'gray.100',
-                    color: 'gray.800',
-                    borderColor: 'gray.200',
-                    cursor: 'not-allowed',
-                    _hover: {
-                        bg: 'gray.100',
-                        color: 'gray.800',
-                        borderColor: 'gray.200'
-                    },
-                    _focus: {
-                        bg: 'gray.100',
-                        color: 'gray.800',
-                        borderColor: 'gray.200'
-                    }
-                }
-            },
         },
         shape: {
             square: { rounded: 'none' },
+            semi: { rounded: '10px' },
             rounded: { rounded: 'full' },
         },
         size: {
@@ -120,9 +122,9 @@ export const buttonRecipe = cva({
         }
     },
     defaultVariants: {
-        color: 'primary',
-        size: 'md',
-        shape: 'rounded'
+        color: 'brand',
+        size: 'sm',
+        shape: 'semi'
     }
 });
 

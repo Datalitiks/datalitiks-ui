@@ -5,37 +5,51 @@ import { ChildrenTypes } from '@/types/common';
 export const cardContentRecipe = cva({
   base: {
     textAlign: 'justify',
-    paddingLeft: '6',
-    paddingRight: '6',
-    paddingTop: '3',
-    paddingBottom: '3',
+    margin: '10px auto 25px'
   },
   variants: {
-    color: {},
+    color: {
+      brand: {
+        color: 'brand.500'
+      },
+      primary: {
+        color: 'primary.500'
+      },
+      secondary: {
+        color: 'secondary.500'
+      },
+      accent: {
+        color: 'accent.500'
+      },
+      tertiary: {
+        color: 'tertiary.500'
+      }
+    },
     size: {
       xs: {
-        fontSize: 'sm',
-        fontWeight: '100'
+        fontSize: '10px',
+        fontWeight: '300',
       },
       sm: {
-        fontSize: 'sm',
-        fontWeight: '300'
+        fontSize: '12px',
+        fontWeight: '400',
       },
       md: {
-        fontSize: 'md',
-        fontWeight: '500'
+        fontSize: '15px',
+        fontWeight: '400',
       },
       lg: {
-        fontSize: 'lg',
-        fontWeight: '700'
+        fontSize: '18px',
+        fontWeight: '500'
       },
       xl: {
-        fontSize: 'lg',
-        fontWeight: '900'
+        fontSize: '25px',
+        fontWeight: '500'
       }
     }
   },
   defaultVariants: {
+    color: 'brand',
     size: 'md',
   }
 })

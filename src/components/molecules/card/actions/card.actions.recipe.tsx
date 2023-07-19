@@ -4,18 +4,48 @@ import { ChildrenTypes } from '@/types/common';
 
 export const cardActionsRecipe = cva({
   base: {
-    display: 'flex',
-    paddingLeft: '3',
-    paddingRight: '3',
-    paddingTop: '3',
-    paddingBottom: '3',
+    alignItems: 'center',
     borderWidth: '1px',
-    maxWidth: '200px',
+    cursor: 'pointer',
+    display: 'flex',
+    fontWeight: '600',
+    justifyContent: 'center',
+    margin: 'auto',
     textAlign: 'center',
-    margin: '20px auto 30px'
   },
   variants: {
     color: {
+      brand: {
+        color: 'brand.50',
+        bg: 'brand.500',
+        borderColor: 'brand.500',
+        _hover: {
+          bg: 'brand.400',
+          color: 'brand.50',
+          borderColor: 'brand.600'
+        },
+        _focus: {
+          bg: 'brand.300',
+          color: 'brand.50',
+          borderColor: 'brand.600'
+        },
+        _disabled: {
+          bg: 'gray.100',
+          color: 'gray.800',
+          borderColor: 'gray.200',
+          cursor: 'not-allowed',
+          _hover: {
+            bg: 'gray.100',
+            color: 'gray.800',
+            borderColor: 'gray.200'
+          },
+          _focus: {
+            bg: 'gray.100',
+            color: 'gray.800',
+            borderColor: 'gray.200'
+          }
+        }
+      },
       primary: {
         color: 'primary.50',
         bg: 'primary.500',
@@ -78,6 +108,68 @@ export const cardActionsRecipe = cva({
           }
         }
       },
+      accent: {
+        color: 'accent.50',
+        bg: 'accent.500',
+        borderColor: 'accent.800',
+        _hover: {
+          bg: 'accent.400',
+          color: 'accent.50',
+          borderColor: 'accent.600'
+        },
+        _focus: {
+          bg: 'accent.300',
+          color: 'accent.50',
+          borderColor: 'accent.600'
+        },
+        _disabled: {
+          bg: 'gray.100',
+          color: 'gray.800',
+          borderColor: 'gray.200',
+          cursor: 'not-allowed',
+          _hover: {
+            bg: 'gray.100',
+            color: 'gray.800',
+            borderColor: 'gray.200'
+          },
+          _focus: {
+            bg: 'gray.100',
+            color: 'gray.800',
+            borderColor: 'gray.200'
+          }
+        }
+      },
+      tertiary: {
+        color: 'tertiary.50',
+        bg: 'tertiary.500',
+        borderColor: 'tertiary.800',
+        _hover: {
+          bg: 'tertiary.400',
+          color: 'tertiary.50',
+          borderColor: 'tertiary.600'
+        },
+        _focus: {
+          bg: 'tertiary.300',
+          color: 'tertiary.50',
+          borderColor: 'tertiary.600'
+        },
+        _disabled: {
+          bg: 'gray.100',
+          color: 'gray.800',
+          borderColor: 'gray.200',
+          cursor: 'not-allowed',
+          _hover: {
+            bg: 'gray.100',
+            color: 'gray.800',
+            borderColor: 'gray.200'
+          },
+          _focus: {
+            bg: 'gray.100',
+            color: 'gray.800',
+            borderColor: 'gray.200'
+          }
+        }
+      },
     },
     shape: {
       square: { rounded: 'none' },
@@ -86,33 +178,48 @@ export const cardActionsRecipe = cva({
     },
     size: {
       xs: {
-        fontSize: 'sm',
-        fontWeight: '100'
+        paddingLeft: '3',
+        paddingRight: '3',
+        paddingTop: '1',
+        paddingBottom: '1',
+        fontSize: 'sm'
       },
       sm: {
-        fontSize: 'sm',
-        fontWeight: '300'
+        paddingLeft: '4',
+        paddingRight: '4',
+        paddingTop: '2',
+        paddingBottom: '2',
+        fontSize: 'sm'
       },
       md: {
-        fontSize: 'md',
-        fontWeight: '500'
+        paddingLeft: '6',
+        paddingRight: '6',
+        paddingTop: '3',
+        paddingBottom: '3',
+        fontSize: 'md'
       },
       lg: {
-        fontSize: 'lg',
-        fontWeight: '700'
+        paddingLeft: '8',
+        paddingRight: '8',
+        paddingTop: '4',
+        paddingBottom: '4',
+        fontSize: 'lg'
       },
       xl: {
-        fontSize: 'lg',
-        fontWeight: '900'
+        paddingLeft: '14',
+        paddingRight: '14',
+        paddingTop: '5',
+        paddingBottom: '5',
+        fontSize: 'lg'
       }
     }
   },
   defaultVariants: {
-    color: 'primary',
-    size: 'md',
+    color: 'brand',
+    size: 'sm',
     shape: 'semi'
   }
-})
+});
 
 export type CardActionsProps = HTMLStyledProps<'button'> &
   RecipeVariantProps<typeof cardActionsRecipe> & {

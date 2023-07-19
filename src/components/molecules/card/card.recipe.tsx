@@ -4,23 +4,42 @@ import { ChildrenTypes } from '@/types/common';
 
 export const cardRecipe = cva({
   base: {
-    borderWidth: '1px',
     borderRadius: '10px',
-    padding: 6,
-    maxWidth: '388px',
-    boxShadow: '5px 5px 3px 0px rgba(0,0,0,0.25)'
+    borderWidth: '1px',
+    boxShadow: '5px 5px 3px 0px rgba(0,0,0,0.25)',
+    margin: 'auto',
+    maxWidth: '700px',
+    paddingBottom: '3',
+    paddingLeft: '6',
+    paddingRight: '6',
+    paddingTop: '3',
   },
   variants: {
     color: {
+      brand: {
+        color: 'brand.500',
+        bg: 'brand.50',
+        borderColor: 'brand.600',
+      },
       primary: {
-        color: 'primary.50',
-        bg: 'primary.500',
-        borderColor: 'primary.800',
+        color: 'primary.500',
+        bg: 'primary.50',
+        borderColor: 'primary.600',
       },
       secondary: {
-        color: 'secondary.50',
-        bg: 'secondary.500',
-        borderColor: 'secondary.800',
+        color: 'secondary.500',
+        bg: 'secondary.50',
+        borderColor: 'secondary.600',
+      },
+      accent: {
+        color: 'accent.500',
+        bg: 'accent.50',
+        borderColor: 'accent.600',
+      },
+      tertiary: {
+        color: 'tertiary.500',
+        bg: 'tertiary.50',
+        borderColor: 'tertiary.600',
       },
     },
     shape: {
@@ -30,39 +49,24 @@ export const cardRecipe = cva({
     },
     size: {
       xs: {
-        paddingLeft: '3',
-        paddingRight: '3',
-        paddingTop: '1',
-        paddingBottom: '1',
+        maxWidth: '200px'
       },
       sm: {
-        paddingLeft: '4',
-        paddingRight: '4',
-        paddingTop: '2',
-        paddingBottom: '2',
+        maxWidth: '350px'
       },
       md: {
-        paddingLeft: '6',
-        paddingRight: '6',
-        paddingTop: '3',
-        paddingBottom: '3',
+        maxWidth: '500px'
       },
       lg: {
-        paddingLeft: '8',
-        paddingRight: '8',
-        paddingTop: '4',
-        paddingBottom: '4',
+        maxWidth: '700px'
       },
       xl: {
-        paddingLeft: '14',
-        paddingRight: '14',
-        paddingTop: '5',
-        paddingBottom: '5',
+        maxWidth: 'none'
       }
     }
   },
   defaultVariants: {
-    color: 'primary',
+    color: 'brand',
     size: 'md',
     shape: 'semi'
   }

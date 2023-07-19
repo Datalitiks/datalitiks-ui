@@ -4,7 +4,6 @@ import { cx } from "@datalitiks/datalitiks-ui/css";
 import { SelectProps, selectRecipe } from './select.recipe';
 
 export const Select = ({
-  color,
   size,
   className,
   children,
@@ -13,7 +12,7 @@ export const Select = ({
   return (
     <styled.select
       {...props}
-      className={cx(selectRecipe({ color, size }), className)}>
+      className={cx(selectRecipe({ size }), className)}>
       {children}
     </styled.select>
   );

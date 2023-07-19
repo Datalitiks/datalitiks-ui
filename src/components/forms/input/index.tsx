@@ -4,7 +4,6 @@ import { cx } from "@datalitiks/datalitiks-ui/css";
 import { InputProps, inputRecipe } from './input.recipe';
 
 export const Input = ({
-  color,
   size,
   className,
   children,
@@ -13,7 +12,7 @@ export const Input = ({
   return (
     <styled.input
       {...props}
-      className={cx(inputRecipe({ color, size }), className)}>
+      className={cx(inputRecipe({ size }), className)}>
       {children}
     </styled.input>
   );

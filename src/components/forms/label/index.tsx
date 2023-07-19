@@ -4,8 +4,7 @@ import { cx } from "@datalitiks/datalitiks-ui/css";
 import { LabelProps, labelRecipe } from './label.recipe';
 
 export const Label = ({
-  color,
-  size,
+  size, 
   className,
   children,
   ...props
@@ -13,7 +12,7 @@ export const Label = ({
   return (
     <styled.label
       {...props}
-      className={cx(labelRecipe({ color, size }), className)}>
+      className={cx(labelRecipe({ size }), className)}>
       {children}
     </styled.label>
   );

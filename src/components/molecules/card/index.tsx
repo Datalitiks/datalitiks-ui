@@ -10,6 +10,7 @@ import { CardActions } from './actions/';
 export const Card = ({
   color,
   size,
+  shape,
   className,
   children,
   ...props
@@ -17,7 +18,7 @@ export const Card = ({
   return (
     <styled.div
       {...props}
-      className={cx(cardRecipe({ size, color }), className)}>
+      className={cx(cardRecipe({ size, color, shape }), className)}>
       {children}
     </styled.div>
   );

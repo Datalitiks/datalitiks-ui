@@ -5,13 +5,14 @@ import { CardContentProps, cardContentRecipe } from './card.content.recipe';
 
 export const CardContent = ({
   color,
+  size,
   className,
   ...props
 }: CardContentProps) => {
   return (
     <styled.p
       {...props}
-      className={cx(cardContentRecipe({ color }), className)}>
+      className={cx(cardContentRecipe({ color, size }), className)}>
     </styled.p>
   );
 };

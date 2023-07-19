@@ -6,6 +6,7 @@ import { CardActionsProps, cardActionsRecipe } from './card.actions.recipe';
 export const CardActions = ({
   color,
   size,
+  shape,
   className,
   children,
   ...props
@@ -13,7 +14,7 @@ export const CardActions = ({
   return (
     <styled.button
       {...props}
-      className={cx(cardActionsRecipe({ color, size }), className)}>
+      className={cx(cardActionsRecipe({ color, size, shape }), className)}>
       {children}
     </styled.button>
   );

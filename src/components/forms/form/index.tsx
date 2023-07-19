@@ -6,6 +6,7 @@ import { FormProps, formRecipe } from './form.recipe';
 export const Form = ({
   color,
   size,
+  shape,
   className,
   children,
   ...props
@@ -13,7 +14,7 @@ export const Form = ({
   return (
     <styled.form
       {...props}
-      className={cx(formRecipe({ size, color }), className)}>
+      className={cx(formRecipe({ size, color, shape }), className)}>
       {children}
     </styled.form>
   );

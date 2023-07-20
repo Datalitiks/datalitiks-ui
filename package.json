@@ -1,11 +1,9 @@
 {
   "name": "@datalitiks/datalitiks-ui",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "description": "Datalitiks common ui components",
   "source": "src/index.ts",
   "main": "dist/index.js",
-  "module": "dist/index.cjs",
-  "types": "dist/index.d.ts",
   "type": "module",
   "files": [
     ".",

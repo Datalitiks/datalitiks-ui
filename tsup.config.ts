@@ -8,7 +8,7 @@ export default defineConfig({
   outDir: 'dist',
   format: ['esm'],
   bundle: false,
-  external: ['@datalitiks/datalitiks-ui'],
+  external: ['@datalitiks/styled-system'],
   entry: ['./index.ts', "./components/**/*.{ts,tsx}", './hooks/**/*.{ts,tsx}', './utils/**/*.{ts,tsx}', './themes/**/*.{ts,tsx}', './types/**/*.{ts,tsx}'],
   esbuildOptions(options) {
     // the directory structure will be the same as the source

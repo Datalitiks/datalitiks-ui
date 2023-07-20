@@ -1,6 +1,6 @@
 import React from 'react';
-import { styled } from '../../../styled-system/jsx';
-import { cx } from "../../../styled-system/css";
+import { styled } from '@datalitiks/styled-system/jsx';
+import { cx } from "@datalitiks/styled-system/css";
 import { InputProps, inputRecipe } from './input.recipe';
 
 export const Input = ({

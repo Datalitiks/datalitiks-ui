@@ -1,5 +1,5 @@
-import {cva, RecipeVariantProps} from "../../../styled-system/css";
-import {HTMLStyledProps} from "../../../styled-system/types/jsx";
+import {cva, RecipeVariantProps} from "@datalitiks/styled-system/css";
+import {HTMLStyledProps} from "@datalitiks/styled-system/jsx"
 import {ChildrenTypes} from "../../../types/common";
 
 

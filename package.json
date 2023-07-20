@@ -1,6 +1,6 @@
 {
   "name": "@datalitiks/datalitiks-ui",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "Datalitiks common ui components",
   "source": "src/index.ts",
   "main": "dist/index.js",
@@ -12,7 +12,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsup --watch",
-    "build": "rimraf ./dist && tsup && npm run copy-system",
+    "build": "rimraf ./dist && tsup",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "lint:fix": "npm run lint -- --fix",
     "ui:dev": "npx ladle serve --stories=./**/*.stories.tsx",
@@ -26,7 +26,7 @@
     "type": "git",
     "url": "git+https://github.com/Datalitiks/datalitiks-ui.git"
   },
-  "author": "",
+  "author": "Ian Jamieson",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Datalitiks/datalitiks-ui/issues"

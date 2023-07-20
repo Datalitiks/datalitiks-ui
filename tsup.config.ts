@@ -6,7 +6,7 @@ export default defineConfig({
   sourcemap: true,
   dts: true,
   outDir: 'dist',
-  format: ['cjs', 'esm'],
+  format: ['esm'],
   bundle: false,
   external: ['@datalitiks/datalitiks-ui'],
   entry: ['./index.ts', "./components/**/*.{ts,tsx}", './hooks/**/*.{ts,tsx}', './utils/**/*.{ts,tsx}', './themes/**/*.{ts,tsx}', './types/**/*.{ts,tsx}'],

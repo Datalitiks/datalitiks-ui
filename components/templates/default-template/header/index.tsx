@@ -1,6 +1,6 @@
-
-import { cx } from '../../../../styled-system/css';
-import { styled } from '../../../../styled-system/jsx';
+import React from 'react';
+import { cx } from '@datalitiks/styled-system/css';
+import { styled } from '@datalitiks/styled-system/jsx';
 import { type DefaultTemplateHeaderProps, defaultTemplateHeaderRecipe } from './header.recipe';
 
 export const DefaultTemplateHeader = ({

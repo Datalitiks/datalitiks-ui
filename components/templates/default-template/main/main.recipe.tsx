@@ -1,5 +1,5 @@
-import { cva, type RecipeVariantProps } from '../../../../styled-system/css';
-import { HTMLStyledProps } from '../../../../styled-system/jsx';
+import { cva, type RecipeVariantProps } from '@datalitiks/styled-system/css';
+import { HTMLStyledProps } from '@datalitiks/styled-system/jsx';
 import {ChildrenTypes} from "../../../../types/common";
 
 export const defaultTemplateMainRecipe = cva({

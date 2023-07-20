@@ -1,6 +1,6 @@
 
-import { type RecipeVariantProps, cva } from '../../../../styled-system/css';
-import { HTMLStyledProps } from '../../../../styled-system/jsx';
+import { type RecipeVariantProps, cva } from '@datalitiks/styled-system/css';
+import { HTMLStyledProps } from '@datalitiks/styled-system/jsx';
 import {ChildrenTypes} from "../../../../types/common";
 
 export const defaultTemplateRightBarRecipe = cva({
